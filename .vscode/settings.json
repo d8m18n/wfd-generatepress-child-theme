@@ -1,0 +1,12 @@
+{
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "editor.formatOnSave": true,
+    "phpsab.standard": "WordPress",
+    "phpsab.debug": true,
+    "phpsab.snifferMode": "onType"
+}

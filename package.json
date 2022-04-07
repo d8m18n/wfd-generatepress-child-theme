@@ -1,0 +1,43 @@
+{
+  "name": "webfoundations",
+  "version": "1.0.0",
+  "description": "A custom site.",
+  "main": "src/index.js",
+  "scripts": {
+    "preview": "npm-run-all --parallel sync start",
+    "sync": "browser-sync start -p 'wfdstarter.local' --files 'theme.json' '**/*.html' '**/*.php' 'build/*.js' 'build/*.css'",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:md:js": "wp-scripts lint-md-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "full",
+    "site",
+    "editing"
+  ],
+  "author": "Damian Saunders",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/scripts": "^18.0.0"
+  },
+  "devDependencies": {
+    "@wordpress/base-styles": "^4.0.0",
+    "@wordpress/browserslist-config": "^4.1.0",
+    "@wordpress/eslint-plugin": "^9.1.2",
+    "@wordpress/stylelint-config": "^19.1.0",
+    "browser-sync": "^2.27.5",
+    "npm-run-all": "^4.1.5"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
+}

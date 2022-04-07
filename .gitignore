@@ -1,0 +1,15 @@
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+
+# Ignore package directories
+/vendor
+/node_modules
+
+# Ignore lock files
+composer.lock
+package-lock.json
+
+# Ignore the dist folder
+/build
