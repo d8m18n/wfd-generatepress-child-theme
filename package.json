@@ -27,7 +27,7 @@
   "author": "Damian Saunders",
   "license": "ISC",
   "dependencies": {
-    "@wordpress/scripts": "^18.0.0"
+    "@wordpress/scripts": "^22.2.1"
   },
   "devDependencies": {
     "@wordpress/base-styles": "^4.0.0",
