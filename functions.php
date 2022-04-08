@@ -70,6 +70,5 @@ require_once get_theme_file_path( '/includes/front/custom-post-types.php' );
  * Hooks
  */
 add_action( 'init', 'wfd_custom_post_types' );
-add_action( 'generate_after_primary_menu', 'wfd_add_header_button', 10 );
 add_filter( 'generate_copyright', 'wfd_custom_copyright' );
 add_filter( 'get_avatar', 'wfd_gravatar_alt' );

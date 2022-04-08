@@ -1,14 +1,35 @@
-/** Header button **/
-a.button.main-nav__button {
-    border-radius: 4px;
-    background-color: var(--primary-500);
-    display: none;
+/**
+ * Style tweaks and overrides for buttons.
+ */
 
-    @media (min-width: 769px) {
-        display: block;
-    }
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.wp-block-button__link:not(.has-background) {
+    border-radius: 4px;
 }
 
-a.main-nav__button:hover {
-    background-color: var(--primary-400);
+input[type="search"].search-field {
+    border-radius: 4px 0 0 4px;
+}
+
+.search-submit {
+    border-radius: 0 4px 4px 0;
+}
+
+@media (min-width: 769px) {
+
+    /** Header button **/
+    .main-navigation .main-nav ul li.main-nav__button a[title="Get Started"] {
+        color: var(--neutral-00);
+        border-radius: 4px;
+        background-color: var(--primary-500);
+    }
+
+    .main-navigation .main-nav ul li.main-nav__button a[title="Get Started"]:hover {
+        color: var(--neutral-00);
+        background-color: var(--primary-400);
+    }
 }
